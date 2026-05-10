@@ -1,0 +1,288 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body{
+
+    background: linear-gradient(135deg, #0f172a, #020617);
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar */
+
+nav{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 60px;
+}
+
+
+.logo{
+
+    color: #3b82f6;
+
+    font-size: 28px;
+}
+
+
+.links a{
+
+    text-decoration: none;
+
+    color: white;
+
+    margin-left: 20px;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+
+.links a:hover{
+
+    color: #3b82f6;
+}
+
+
+/* Hero */
+
+.hero{
+
+    height: 85vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Image */
+
+.hero img{
+
+    width: 220px;
+
+    height: 220px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid #3b82f6;
+
+    box-shadow: 0 0 30px #2563eb;
+
+    margin-bottom: 20px;
+}
+
+
+/* Text */
+
+.hero h1{
+
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero p{
+
+    font-size: 22px;
+
+    color: #cbd5e1;
+
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+.buttons a{
+
+    text-decoration: none;
+
+    color: white;
+
+    background-color: #2563eb;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    margin: 10px;
+
+    display: inline-block;
+
+    transition: 0.3s;
+}
+
+
+.buttons a:hover{
+
+    background-color: #1d4ed8;
+
+    transform: scale(1.1);
+}
+
+
+/* About */
+
+.about{
+
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+
+.about h2{
+
+    font-size: 45px;
+
+    margin-bottom: 30px;
+
+    color: #3b82f6;
+}
+
+
+.about p{
+
+    font-size: 22px;
+
+    color: #cbd5e1;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.8;
+}
+
+
+/* Skills */
+
+.skills{
+
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+
+.skills h2{
+
+    font-size: 45px;
+
+    margin-bottom: 50px;
+
+    color: #3b82f6;
+}
+
+
+.skills-container{
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+
+.skill-card{
+
+    background-color: #1e293b;
+
+    padding: 30px 50px;
+
+    border-radius: 20px;
+
+    font-size: 25px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+}
+
+
+.skill-card:hover{
+
+    transform: translateY(-10px);
+
+    background-color: #2563eb;
+}
+
+
+/* Footer */
+
+footer{
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 50px;
+
+    background-color: #020617;
+}
+
+
+footer p{
+
+    color: #cbd5e1;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .buttons a{
+        display: block;
+    }
+
+    .skills-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
